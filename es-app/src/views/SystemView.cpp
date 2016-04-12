@@ -14,7 +14,7 @@
 #define BAND_HEIGHT (logoSize().y() * SELECTED_SCALE)
 
 SystemView::SystemView(Window* window) : IList<SystemViewData, SystemData*>(window, LIST_SCROLL_STYLE_SLOW, LIST_ALWAYS_LOOP),
-	mSystemInfo(window, "SYSTEM INFO", Font::get(FONT_SIZE_SMALL), 0x33333300, ALIGN_CENTER)
+	mSystemInfo(window, "INFORMACOES DO SISTEMA", Font::get(FONT_SIZE_SMALL), 0x33333300, ALIGN_CENTER)
 {
 	mCamOffset = 0;
 	mExtrasCamOffset = 0;
@@ -179,7 +179,7 @@ void SystemView::onCursorChanged(const CursorState& state)
 		
 		// only display a game count if there are at least 2 games
 		if(gameCount > 1)
-			ss << gameCount << " GAMES AVAILABLE";
+			ss << gameCount << " JOGOS DISPONIVEIS";
 
 		mSystemInfo.setText(ss.str()); 
 	}, false, 1);
