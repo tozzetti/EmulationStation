@@ -46,6 +46,6 @@ void AsyncReqComponent::render(const Eigen::Affine3f& parentTrans)
 std::vector<HelpPrompt> AsyncReqComponent::getHelpPrompts()
 {
 	std::vector<HelpPrompt> prompts;
-	prompts.push_back(HelpPrompt("b", "cancel"));
+	prompts.push_back(HelpPrompt("b", "cancelar"));
 	return prompts;
 }

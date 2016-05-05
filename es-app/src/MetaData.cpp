@@ -7,18 +7,18 @@ namespace fs = boost::filesystem;
 
 MetaDataDecl gameDecls[] = { 
 	// key,			type,					default,			statistic,	name in GuiMetaDataEd,	prompt in GuiMetaDataEd
-	{"name",		MD_STRING,				"", 				false,		"name",					"enter game name"}, 
-	{"desc",		MD_MULTILINE_STRING,	"", 				false,		"description",			"enter description"},
-	{"image",		MD_IMAGE_PATH,			"", 				false,		"image",				"enter path to image"},
-	{"thumbnail",	MD_IMAGE_PATH,			"", 				false,		"thumbnail",			"enter path to thumbnail"},
-	{"rating",		MD_RATING,				"0.000000", 		false,		"rating",				"enter rating"},
-	{"releasedate", MD_DATE,				"not-a-date-time", 	false,		"release date",			"enter release date"},
-	{"developer",	MD_STRING,				"unknown",			false,		"developer",			"enter game developer"},
-	{"publisher",	MD_STRING,				"unknown",			false,		"publisher",			"enter game publisher"},
-	{"genre",		MD_STRING,				"unknown",			false,		"genre",				"enter game genre"},
-	{"players",		MD_INT,					"1",				false,		"players",				"enter number of players"},
-	{"playcount",	MD_INT,					"0",				true,		"play count",			"enter number of times played"},
-	{"lastplayed",	MD_TIME,				"0", 				true,		"last played",			"enter last played date"}
+	{"name",		MD_STRING,				"", 				false,		"nome",					"insira o nome do jogo"}, 
+	{"desc",		MD_MULTILINE_STRING,	"", 				false,		"descricao",			"insira descricao"},
+	{"image",		MD_IMAGE_PATH,			"", 				false,		"imagem",				"insira caminho da imagem"},
+	{"thumbnail",	MD_IMAGE_PATH,			"", 				false,		"miniatura",			"insira caminho da miniatura"},
+	{"rating",		MD_RATING,				"0.000000", 		false,		"classificacao",				"insira classificacao"},
+	{"releasedate", MD_DATE,				"not-a-date-time", 	false,		"data de lancamento",			"insira data de lancamento"},
+	{"developer",	MD_STRING,				"unknown",			false,		"desenvolvedor",			"insira desenvolvedor"},
+	{"publisher",	MD_STRING,				"unknown",			false,		"editora",			"insira editora"},
+	{"genre",		MD_STRING,				"unknown",			false,		"genero",		"insira genero"},
+	{"players",		MD_INT,					"1",				false,		"numero de jogadores",	"insira numero de jogadores"},
+	{"playcount",	MD_INT,					"0",				true,		"vezes jogado",			"insira numero de vezes jogado"},
+	{"lastplayed",	MD_TIME,				"0", 				true,		"ultima vez jogada",			"insira ultima vez jogada"}
 };
 const std::vector<MetaDataDecl> gameMDD(gameDecls, gameDecls + sizeof(gameDecls) / sizeof(gameDecls[0]));
 
